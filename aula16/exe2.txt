@@ -1,0 +1,73 @@
+ 1) Explique o que é uma fila e o conceito FIFO em estrutura de dados:
+	
+	Resposta:
+
+	FIFO é uma abreviação para Firt in, Last out, traduzindo, o primeiro a	
+	entrar é o ultimo a sair, o conceito de uma fila, é baseado em FIFO, então
+	ele segue a lógica, onde você insere informações e as empilhando uma em
+	cima da outra, e as remove a partir da primeira que entrou.
+
+
+2) Analise e explique o que faz o trecho de código abaixo:
+	fila[fim] = valor;
+	fim++;
+	
+	Resposta:
+
+	O trecho do código se trata da parte onde se insere um número, no fim da
+	fila, por tanto, se adiciona mais um número a variavel fim. O fila[fim]
+	adiciona o novo valor ao final da fila. 
+
+
+
+3) Observe o código e complete o que se pede:
+	Fila vazia quando:	
+	
+		Quando o inicio for igual ao fim.
+
+	Fila cheia quando:
+		
+		Quando fim é igual ao MAX.
+
+4)Analise o trecho de código e discorra qual será a saida:
+
+	inserir(10);
+	inserir(20);
+	inserir(30);
+	remover();
+	mostrar();
+
+	Respota:
+	
+	A saida será:
+		
+		10 Removido
+		
+		fila:
+		20
+		30
+
+5) Complete a função a seguir:
+
+	void inserir(int valor){
+		if(fim == MAX) {
+			printf("Fila cheia!\n");
+			return;
+		}
+
+	fila[fim] = valor;
+	fim++;
+	}
+
+6)Analise o código remover e modifique-o para retornar o valor removido
+
+void remover() {
+        if (inicio== fim) {
+                printf("Fila vazia!\n");
+                return;
+        }
+
+        printf("\n valor removido da fila: %d\n", fila[inicio]);
+        inicio++;
+}
+
